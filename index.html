@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOXICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/App.css" />
+    <title>Rifaldi Yudha R.</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo"> IDigital Co.</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+
+          <i
+            class="uil uil-times nav__close"
+            id="nav-close"
+            onclick="closeMenu(closeMenu)"
+          ></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle" onclick="showMenu(showMenu)">
+          <i class="uil uil-apps"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--================ MAIN =================-->
+    <main class="main">
+      <!--================ HOME =================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/rifaaaldiiii"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+
+              <a
+                href="https://x.com/rifaaaldiiii"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+
+              <a
+                href="https://github.com/rifaaaldiii"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github"></i>
+              </a>
+            </div>
+
+            <div class="home__img"></div>
+
+            <div class="home__data grid">
+              <div class="home__info">
+                <h1 class="home__title">Rifaldi Yudha R.</h1>
+                <h3 class="home__subtitle">Web Developer</h3>
+                <p class="home__description">
+                  Seorang pengembang web yang berpengalaman dengan keahlian
+                  dalam menciptakan situs web yang responsif dan menarik.
+                  Memiliki kemampuan dalam HTML, CSS, dan JavaScript.
+                </p>
+                <a href="#contact" class="button button--flex">
+                  Contact Me
+                  <svg
+                    class="button__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
+                      fill="var(--container-color)"
+                    ></path>
+                    <path
+                      d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
+                      fill="var(--container-color)"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <svg
+                width="32px"
+                height="32px"
+                class="home__scroll-mouse"
+                viewBox="0 0 247 390"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 1.5;
+                "
+              >
+                <path
+                  class="wheel"
+                  d="M123.359,79.775l0,72.843"
+                  style="
+                    fill: none;
+                    stroke: var(--title-color);
+                    stroke-width: 20px;
+                  "
+                ></path>
+                <path
+                  id="mouse"
+                  d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                  style="
+                    fill: none;
+                    stroke: var(--title-color);
+                    stroke-width: 20px;
+                  "
+                ></path>
+              </svg>
+
+              <span class="home__scroll-name">Scroll Down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--================ ABOUT =================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About</h2>
+        <span class="section__subtitle">My Introduction</span>
+
+        <div class="about__container container grid">
+          <img src="assets/img/about.jpg" alt="" class="about__img" />
+
+          <div class="about__data">
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle"> 1+ Years Working</span>
+              </div>
+
+              <div class="about__box">
+                <i class="bx bx-briefcase about__icon"></i>
+                <h3 class="about__title">Completed</h3>
+                <span class="about__subtitle"> 3+ Projects</span>
+              </div>
+
+              <div class="about__box">
+                <i class="bx bx-support about__icon"></i>
+                <h3 class="about__title">Support</h3>
+                <span class="about__subtitle"> Online 24/7</span>
+              </div>
+            </div>
+
+            <p class="about__description">
+              Saya adalah pengembang web berpengalaman dengan keahlian dalam
+              HTML, CSS, dan JavaScript. Saya fokus pada pembuatan situs web
+              responsif dan menarik, serta memiliki kemampuan untuk bekerja
+              dalam tim dan memberikan solusi inovatif untuk kebutuhan klien.
+            </p>
+
+            <a
+              download="Rifaldi-CV.pdf"
+              href="assets/Rifaldi-CV.pdf"
+              class="button button--flex"
+            >
+              Download CV
+              <svg
+                class="button__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.25 22.7502H9.25C3.82 22.7502 1.5 20.4302 1.5 15.0002V9.00024C1.5 3.57024 3.82 1.25024 9.25 1.25024H14.25C14.66 1.25024 15 1.59024 15 2.00024C15 2.41024 14.66 2.75024 14.25 2.75024H9.25C4.64 2.75024 3 4.39024 3 9.00024V15.0002C3 19.6102 4.64 21.2502 9.25 21.2502H15.25C19.86 21.2502 21.5 19.6102 21.5 15.0002V10.0002C21.5 9.59024 21.84 9.25024 22.25 9.25024C22.66 9.25024 23 9.59024 23 10.0002V15.0002C23 20.4302 20.68 22.7502 15.25 22.7502Z"
+                  fill="var(--container-color)"
+                ></path>
+                <path
+                  d="M22.25 10.7502H18.25C14.83 10.7502 13.5 9.42023 13.5 6.00023V2.00023C13.5 1.70023 13.68 1.42023 13.96 1.31023C14.24 1.19023 14.56 1.26023 14.78 1.47023L22.78 9.47023C22.99 9.68023 23.06 10.0102 22.94 10.2902C22.82 10.5702 22.55 10.7502 22.25 10.7502ZM15 3.81023V6.00023C15 8.58023 15.67 9.25023 18.25 9.25023H20.44L15 3.81023Z"
+                  fill="var(--container-color)"
+                ></path>
+                <path
+                  d="M13.25 13.7502H7.25C6.84 13.7502 6.5 13.4102 6.5 13.0002C6.5 12.5902 6.84 12.2502 7.25 12.2502H13.25C13.66 12.2502 14 12.5902 14 13.0002C14 13.4102 13.66 13.7502 13.25 13.7502Z"
+                  fill="var(--container-color)"
+                ></path>
+                <path
+                  d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
+                  fill="var(--container-color)"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--================ SKILLS =================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Technical Level</span>
+
+        <div class="skills__container container grid">
+          <!--================ FRONTEND =================-->
+          <div class="skills__content">
+            <h3 class="skills__title">Frontend Developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Tailwind</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--================ BACKEND =================-->
+          <div class="skills__content">
+            <h3 class="skills__title">Backend Developer</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">MySQL</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">SQL</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================ SERVICES =================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I Offer</span>
+
+        <div class="services__container container grid">
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="services__title">Product <br />Designer</h3>
+            </div>
+
+            <span
+              class="services__button"
+              id="services__button"
+              onclick="toggleModal('services__modal1')"
+            >
+              View More
+              <i class="uil uil-arrow-right services__button-icon"></i>
+            </span>
+
+            <div class="services__modal" id="services__modal1">
+              <div class="services__modal-content">
+                <i
+                  class="uil uil-times services__modal-close"
+                  id="modal-close"
+                  onclick="toggleModal('services__modal1')"
+                ></i>
+                <h3 class="services__modal-title">Product Designer</h3>
+                <p class="services__modal-description">
+                  Seorang desainer produk yang berpengalaman dalam menciptakan
+                  solusi desain yang inovatif dan fungsional.
+                </p>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Mendesain antarmuka pengguna yang intuitif dan menarik.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Mengembangkan prototipe interaktif untuk pengujian
+                      pengguna.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Melakukan penelitian pengguna untuk memahami kebutuhan dan
+                      preferensi.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Berkolaborasi dengan tim pengembang untuk implementasi
+                      desain.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Mengoptimalkan pengalaman pengguna melalui umpan balik dan
+                      iterasi.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title">UI/UX <br />Designer</h3>
+            </div>
+
+            <span
+              class="services__button"
+              id="services__button"
+              onclick="toggleModal('services__modal2')"
+            >
+              View More
+              <i class="uil uil-arrow-right services__button-icon"></i>
+            </span>
+
+            <div class="services__modal" id="services__modal2">
+              <div class="services__modal-content">
+                <i
+                  class="uil uil-times services__modal-close"
+                  id="modal-close"
+                  onclick="toggleModal('services__modal2')"
+                ></i>
+                <h3 class="services__modal-title">UI/UX Designer</h3>
+                <p class="services__modal-description">
+                  Mendesain antarmuka pengguna yang responsif dan menarik.
+                </p>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Mendesain antarmuka pengguna yang responsif dan menarik.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Melakukan penelitian pengguna untuk memahami kebutuhan dan
+                      preferensi.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Mengembangkan prototipe interaktif untuk pengujian
+                      pengguna.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Berkolaborasi dengan tim pengembang untuk implementasi
+                      desain.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-service">
+                    <i class="bx bx-check-circle services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Mengoptimalkan pengalaman pengguna melalui umpan balik dan
+                      iterasi.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================ QUALIFICATION =================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal jurney</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              id="qualification__button1"
+              onclick="toggleQualification()"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+            <div
+              class="qualification__button button--flex"
+              id="qualification__button2"
+              onclick="toggleQualification()"
+            >
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Experience
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <div
+              class="qualification__content qualification__content-active"
+              id="qualification__content1"
+            >
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">SD</h3>
+                  <span class="qualification__subtitle">SDN 1 Jiput</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 2011 - 2012
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">SMP</h3>
+                  <span class="qualification__subtitle"
+                    >SMP Negeri 1 Jiput</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 2014 - 2015
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">SMA</h3>
+                  <span class="qualification__subtitle"
+                    >SMA Negeri 4 Pandeglang</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 2017 - 2018
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Perguruan Tinggi</h3>
+                  <span class="qualification__subtitle"
+                    >Universitas Bina Bangsa</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 2023 - 2024
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__content" id="qualification__content2">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Esport Player</h3>
+                  <span class="qualification__subtitle">Mobile Game</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 2018 - 2019
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Web Developer</h3>
+                  <span class="qualification__subtitle">Klinik Gigi</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i> 2024
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================ WORK =================-->
+      <section class="work section" id="portfolio">
+        <div>
+          <h2 class="section__title">Portfolio</h2>
+          <span class="section__subtitle">Most recent work</span>
+
+          <div class="work__container container grid">
+            <div class="work__card" data-id="1">
+              <img src="assets/img/work1.png" class="work__img" />
+              <h3 class="work__title">Admin Pannel</h3>
+              <a
+                href="javascript:void(0);"
+                class="work__button"
+                target="_blank"
+                onclick="alert('Untuk melakukan Login Admin Pannel masukan : \nEmail: owner@gmail.com \nPassword: owner123'); window.open('http://klinik-app.rf.gd/?i=1', '_blank');"
+              >
+                Demo
+                <i class="bx bx-right-arrow-alt work__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="work__card" data-id="2">
+              <img src="assets/img/work2.png" class="work__img" />
+              <h3 class="work__title">Personal Website</h3>
+              <a href="#" class="work__button">
+                Demo
+                <i class="bx bx-right-arrow-alt work__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="work__card" data-id="3">
+              <img src="assets/img/work3.png" class="work__img" />
+              <h3 class="work__title">Personal Website</h3>
+              <a
+                href="https://rifaaaldiii.github.io/Profile/"
+                class="work__button"
+                target="_blank"
+              >
+                Demo
+                <i class="bx bx-right-arrow-alt work__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================ CONTACT ME =================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bxl-gmail contact__card-icon"></i>
+
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">rifaldiyuda29@gmail.com</span>
+                <a href="mailto:rifaldiyuda29@gmail.com" class="contact__button"
+                  >Write me
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bxl-whatsapp contact__card-icon"></i>
+
+                <h3 class="contact__card-title">WhatsApp</h3>
+                <span class="contact__card-data">+62 8212360995</span>
+                <a
+                  href="https://wa.me/628212360995"
+                  class="contact__button"
+                  target="_blank"
+                  >Write me
+                  <i class="uil uil-arrow-right contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Write me your project</h3>
+
+            <form
+              id="contact-form"
+              class="contact__form"
+              onsubmit="sendEmail(event)"
+            >
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Nama</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="contact__form-input"
+                  placeholder="Insert your name"
+                  required
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="contact__form-input"
+                  placeholder="Insert your email"
+                  required
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Project</label>
+                <textarea
+                  name="project"
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                  placeholder="Write your project"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button button--flex">
+                Send Message
+                <svg
+                  class="button__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
+                    fill="var(--container-color)"
+                  ></path>
+                  <path
+                    d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
+                    fill="var(--container-color)"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--================ FOOTER =================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">IDigital Co.</h1>
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="footer__link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer__link">Contact Me</a>
+          </li>
+        </ul>
+
+        <div class="footer__social">
+          <a
+            href="https://www.instagram.com/rifaaaldiiii"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://x.com/rifaaaldiiii"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+
+          <a
+            href="https://github.com/rifaaaldiii"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+        </div>
+
+        <span class="footer__copy"
+          >&#169; IDigital Co. All rigths reserved</span
+        >
+      </div>
+    </footer>
+
+    <!--================ SCROLL UP =================-->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("NTcRQVNvOJ75D5XdZ"); // Ganti dengan User ID Anda
+      })();
+
+      function sendEmail(event) {
+        event.preventDefault(); // Mencegah pengiriman formulir default
+
+        const form = event.target; // Pastikan ini adalah elemen formulir yang benar
+
+        emailjs.sendForm("service_1dlehnj", "template_2xbhi6r", form).then(
+          // Menggunakan 'form' langsung
+          (result) => {
+            console.log(result); // Debugging
+            alert("Email sent successfully!");
+            form.reset(); // Reset formulir setelah pengiriman
+          },
+          (error) => {
+            console.log(error); // Debugging
+            alert("Failed to send email. Please try again.");
+          }
+        );
+      }
+    </script>
+  </body>
+</html>
