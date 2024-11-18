@@ -13,24 +13,25 @@ const toggleModal = (modal) => {
   modalElement.classList.toggle("active-modal");
 };
 
-const toggleQualification = () => {
-  const qualificationButton1 = document.getElementById(
-    "qualification__button1"
-  );
-  const qualificationButton2 = document.getElementById(
-    "qualification__button2"
-  );
-  qualificationButton1.classList.toggle("qualification__active");
-  qualificationButton2.classList.toggle("qualification__active");
-  const qualificationContent1 = document.getElementById(
-    "qualification__content1"
-  );
-  const qualificationContent2 = document.getElementById(
-    "qualification__content2"
-  );
-  qualificationContent1.classList.toggle("qualification__content-active");
-  qualificationContent2.classList.toggle("qualification__content-active");
-};
+// Fungsi untuk mengubah tampilan konten kualifikasi
+function toggleQualification(index) {
+  const contents = document.querySelectorAll(".qualification__content");
+  const buttons = document.querySelectorAll(".qualification__button");
+
+  // Menyembunyikan semua konten kualifikasi
+  contents.forEach((content) => {
+    content.classList.remove("qualification__content-active");
+  });
+
+  // Menghapus kelas aktif dari semua tombol
+  buttons.forEach((button) => {
+    button.classList.remove("qualification__active");
+  });
+
+  // Menampilkan konten yang sesuai dengan indeks yang dipilih
+  contents[index - 1].classList.add("qualification__content-active");
+  buttons[index - 1].classList.add("qualification__active");
+}
 
 window.addEventListener("scroll", () => {
   const scrollUp = document.getElementById("scroll-up");
